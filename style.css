@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "georgia";
+    src: url(/fonts/Georgia.ttf);
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+:root{
+    --light : #F1CDB3;
+    --dark : #cdcdcd;
+}
+*{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    transition: 0.4s ease-in-out;
+}
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.background{
+    background: #252325;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    width: 100%;
+    height: 908px;
+}
+.background-gradient{
+    background: radial-gradient(circle farthest-corner at 100px 50px, #5B483A, #262425);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+}
+header .wrapper{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}   
+.logo{
+    margin-left: 0;
+}
+header .wrapper .menu{
+    display: flex;
+    align-items: center;
+    width: 443px;
+    height: 27px;
+    margin-right: 0;
+}
+header .menu a{
+    color: #cdcdcd;
+    text-decoration: none;  
+}
+header .menu p:nth-child(4){
+    margin-right: 0;
+}
+h1{
+    font-size: 44px;
+    color: #fff;
+    font-family: georgia;
+    font-weight: 300;
+    width: 310px;
+    line-height: 56px;
+    margin: 0;
+    margin-bottom: 42px;
+}
+.menu__active{
+    color: #fafafa !important;
+}
+.menu__active::before{
+    content: '';
+    position: absolute;
+    top: 70px;
+    border: 1px solid var(--light);
+    width: 114px;
+}
+.Not__only{
+    display: flex;
+    margin-bottom: 80px;
+}
+.slider__text{
+    margin-top: 165px;
+}
+.slider__text p{
+    color: var(--dark);
+    width: 460px;
+    margin-bottom: 57px;
+}
+.friend__btn{
+    text-decoration: none;
+    font-size: 17px;
+    color: #292929;
+    padding: 15px 45px;
+    background-color: var(--light);
+    border-radius: 100px;
+    font-family: georgia;
+}
+.about{
+    display: flex;
+    margin-bottom: 100px;
+}
+.about__info{
+    height: 380px;
+    margin-top: 14px;
+}
+.about_img{
+    max-height: 408px;
+    margin-right: 0;
+}
+h2{
+    font-family: georgia;
+    font-size: 35px;
+    color: #545454;
+    font-weight: 300;
+}
+.about__info h2{
+    max-width: 370px;
+    margin-left: 0;    
+    margin-bottom: 25px;
+}
+.about__info p{
+    max-width: 430px;
+    margin-left: 0;    
+    color: #4c4c4c;
+    line-height: 24px;
+}
+.about__info p:nth-child(2){
+    margin-bottom: 25px;
+}
+.arrows{
+    position: absolute;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20%;
+}
+.left__arrow{
+    margin-left: 0;
+}
+.right__arrow{
+    margin-right: 0;
+}
+.our__friends{
+    background-color: #f6f6f6;
+    margin-bottom: 80px;
+    padding: 70px 0 100px;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+}
+.headline h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.friends__catalog{ 
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-bottom: 80px;
+}
+.pet{
+    width: 270px;
+    height: 435px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9px;
+}
+.pet__name{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.pet__name p{
+    font-size: 20px;
+    font-family: georgia;
+    font-weight: 300;
+    color: #545454;
+}
+.pet__info{
+    text-align: center;
+}
+.pet__info a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #292929;
+    padding: 15px 45px;
+    border: 1px solid var(--light);
+    border-radius: 100px;
+}
+.pet__photo{
+    margin-bottom: 30px;
+}
+.rest__pets a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #292929;
+    padding: 15px 45px;
+    background-color: var(--light);
+    border-radius: 100px;
+}
+.rest__pets{
+    text-align: center;
+}
+.help h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.help__options{
+    max-width: 1026px;
+    margin-bottom: 100px;
+}
+.first__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+.second__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 860px;
+}
+.help__item img{
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+.help__item p{
+    color: #545454;
+    font-family: georgia;
+    text-align: center;
+}
+.in__addition{
+    background-color: #f6f6f6;
+}
+.in__addition .wrapper{
+    display: flex;
+    padding: 79px 0 99px;
+    max-width: 915px;
+}
+.additional__info{
+    margin-left: 30px;
+}
+.additional__info h2{
+    margin-bottom: 20px;
+}
+.additional__info p:nth-child(2){
+    margin-bottom: 20px;
+    font-family: georgia;
+    color: #545454;
+}
+.card__container{
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.card__container p{
+    padding:  10px 60px 10px 15px;
+    background-color: var(--light);
+    border-radius: 9px;
+    color: #545454;
+    font-family: georgia;
+    vertical-align: middle;
+}
+.card__container p::before{
+    content: url(photo/credit-card.svg);
+    margin-right: 15px;
+}
+.add__info{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b2b2b2;
+    font-size: 12px !important;
+    line-height: 18px;
+    font-style: italic;
+}   
+footer{
+    background: radial-gradient(circle farthest-corner at 100px 50px, #513D2F, #211F20);
+}
+.footer__container{
+    display: flex;
+    padding: 60px 0 0 0;
+}
+.faq__title, .visit{
+    font-size: 35px;
+    font-family: georgia;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.mail, .phone, .adress__one, .adress__two{
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    font-family: georgia;
+    font-size: 20px;
+}
+.mail, .adress__one{
+    margin-bottom: 40px;
+}
+.mail::before{
+    content: url(photo/icon-email.svg);
+    padding-right: 20px;
+}
+.phone::before{
+    content: url(photo/icon-phone.svg);
+    padding-right: 20px;
+}
+.adress__one::before{
+    content: url(photo/icon-marker.png);
+    padding-right: 20px;
+}
+.adress__two::before{
+    content: url(photo/icon-marker.png);
+    padding-right: 20px;
+}
+.footer__pet img{
+    margin-bottom: -3px;
+}
+
+.menu p:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.friend__btn:hover{
+    border: 2px solid var(--light);
+    background-color: #fff;
+    padding: 13px 43px;
+    cursor: pointer;
+}
+.pet:hover .pet__info a{
+    background-color: var(--light);
+    cursor: pointer;
+}
+.rest__pets a:hover{
+    background-color: #fff;
+    border: 2px solid var(--light);
+    padding: 13px 43px;
+    cursor: pointer;
+}
