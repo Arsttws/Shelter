@@ -190,8 +190,8 @@ footer{
     margin-bottom: -3px;
 }
 
-.menu p:hover{
-    color: #fff;
+.menu a:hover{
+    color: var(--light);
     cursor: pointer;
 }
 .friend__btn:hover{
