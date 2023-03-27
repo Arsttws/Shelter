@@ -142,9 +142,22 @@ h2{
 }
 .left__arrow{
     margin-left: 0;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+}
+.left__arrow img, .right__arrow img{
+    padding-top: 23px;
 }
 .right__arrow{
     margin-right: 0;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    text-align: center;
 }
 .our__friends{
     background-color: #f6f6f6;
@@ -337,5 +350,10 @@ footer{
     background-color: #fff;
     border: 2px solid var(--light);
     padding: 13px 43px;
+    cursor: pointer;
+}
+.arrow:hover{
+    background-color: var(--light);
+    border: 1px solid #fff;
     cursor: pointer;
 }
