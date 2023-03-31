@@ -357,3 +357,47 @@ footer{
     border: 1px solid #fff;
     cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+    
+    .wrapper{
+        max-width: 800px;
+    }
+    .Not__only{
+        display: block;
+    }
+    .background{
+        height: 1133px;
+    }
+    h1{
+        margin: auto;
+        width: 460px;
+        margin-bottom: 40px;
+    }
+    .slider__text{
+        margin-top: 0;
+        margin-bottom: 80px;
+        max-width: 460px;
+    }
+    .friend__btn{
+        margin: auto;
+        align-items: center;
+    }
+    .not_only__img img{
+        width: 569px;
+    }
+    .not_only__img{
+        max-width: 569px;
+    }
+    .arrows{
+        max-width: 800px;
+        margin-top: 28%;
+    }
+    .friends__catalog div:nth-child(3){
+        display: none;
+    }
+    .friends__catalog{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0;
+        max-width: 600px;
+    }
+    }
