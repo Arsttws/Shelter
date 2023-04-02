@@ -269,15 +269,17 @@ h2{
     vertical-align: middle;
     margin-bottom: 20px;
 }
-.card__container p{
+.card__container a{
     padding:  10px 60px 10px 15px;
     background-color: var(--light);
     border-radius: 9px;
     color: #545454;
     font-family: georgia;
     vertical-align: middle;
+    text-decoration: none;
+    display: flex;
 }
-.card__container p::before{
+.card__container a::before{
     content: url(photo/credit-card.svg);
     margin-right: 15px;
 }
@@ -401,3 +403,95 @@ footer{
         max-width: 600px;
     }
     }
+@media screen and (max-width: 768px) {
+    .wrapper{
+        max-width: 708px;
+    }
+    header .wrapper{
+        margin-bottom: 60px;
+    }
+    .slider__text{
+        margin-bottom: 100px;
+    }
+    .slider__text p{
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    .friend__btn{
+        display: flex;
+        width: 117px;
+    }
+    .not_only__img{
+        margin-right: 0;
+    }
+    .background{
+        height: 1169px;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about_img{
+        margin: auto;
+    }
+    .about__info h2{
+        line-height: 43px;
+    }
+    .about_img{
+        margin-top: 70px;
+    }
+    .Not__only{
+        margin-bottom: 60px;
+        line-height: 26px;
+    }
+    .arrows{
+        max-width: 708px;
+        margin-top: 45%;
+    }
+    .our__friends {
+        padding: 84px 0 100px;
+        margin-bottom: 96px;
+    }
+    .first__row{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+    }
+    .vitamins__item{
+        display: block !important;
+    }
+    .second__row div:nth-child(1){
+        display: none;
+    }
+    .second__row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .help__item p{
+        font-size: 20px;
+    }
+    .in__addition .wrapper {
+        flex-direction: column-reverse;
+    }
+    .additional__info{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .additional__info h2{
+        line-height: 46px;
+    }
+    .card__container a{
+        font-size: 20px;
+    }
+    .add__info{
+        margin-top: 20px;
+    }
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+                padding: 32px 0 0 0;
+    }
+    .footer__pet{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
