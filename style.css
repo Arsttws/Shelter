@@ -525,7 +525,7 @@ footer{
         top: 300px;
         width: 243px;
     }
-    .hamburger.active{
+    .hamburger{
         position: absolute;
         right: 30px;
         height: 22px;
@@ -533,6 +533,9 @@ footer{
         top: 30px;  
         display: flex;
         flex-direction: column;
+    }
+    .hamburger.active{
+        transform: rotate(90deg);
     }
     .hamburger__line{
         background-color: var(--light);
@@ -586,5 +589,33 @@ footer{
     .first__row, .second__row{
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 50px;
+    }
+    .about__info{
+        height: fit-content;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about{
+        max-width: 300px;
+    }
+    h2, .faq__title, .faq p, .visit{
+        font-size: 25px;
+        text-align: center;
+    }
+    .card__container a {
+        font-size: 16px;
+        padding-right: 15px;
+    }
+    .card__container a::before {
+        width: 30px;
+    }
+    .arrows{
+        margin-top: 190%;
+        max-width: 184px;
+        width: 100%;
+        margin-left: 68px;
+    }
+    .friends__catalog{
+        margin-bottom: 134px;
     }
 }
