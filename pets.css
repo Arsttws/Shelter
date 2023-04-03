@@ -210,3 +210,104 @@ footer{
     padding: 13px 43px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    .friends__catalog{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .friends__catalog div:nth-child(8), .friends__catalog div:nth-child(7){
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .friends__catalog{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .friends__catalog div:nth-child(6), .friends__catalog div:nth-child(5){
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .menu.active{
+        position: fixed;
+        top: 0;
+        background-color: #211F20;
+        max-width: 320px !important;
+        width: 100% !important;
+        height: 100vh !important;
+        right: 0 !important;
+        flex-direction: column;
+        vertical-align: middle;
+    }
+    .menu.active a:nth-child(2){
+        margin-top: auto;
+    }
+    .menu.active a:nth-child(5){
+        margin-bottom: auto;
+    }
+    .menu.active .last__menu__item{
+        margin-bottom: auto;
+    }
+    .menu a{
+        right: -100%;
+        display: none;
+    }
+    .menu.active a{
+        display: flex;
+        padding: 50px 0;
+        font-size: 32px;
+        right: 0;
+    }
+    .menu.active .menu__active::before{
+        top: 440px;
+        width: 123px;
+    }
+    .hamburger{
+        position: absolute;
+        right: 30px;
+        height: 22px;
+        z-index: 99;
+        top: 30px;  
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger.active{
+        transform: rotate(90deg);
+    }
+    .hamburger__line{
+        background-color: var(--light);
+        content: '';
+        width: 30px;
+        height: 2px;
+        margin-right: 0;
+        margin-left: auto;
+        margin: auto;
+    }
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 32px 0 0 0;
+    }
+    .footer__pet{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media screen and (max-width: 560px) {
+    .friends__catalog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .friends__catalog div:nth-child(4), .friends__catalog div:nth-child(5){
+        display: none;
+    }
+    .footer__container{
+        display: block;
+    }
+    h1, h2, .faq__title, .faq p, .visit{
+        font-size: 25px;
+        text-align: center;
+    }
+    .faq{
+        margin-bottom: 60px;
+    }
+}
