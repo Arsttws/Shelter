@@ -511,27 +511,37 @@ footer{
     .menu.active .last__menu__item{
         margin-bottom: auto;
     }
+    .menu a{
+        right: -100%;
+        display: none;
+    }
     .menu.active a{
+        display: flex;
         padding: 50px 0;
         font-size: 32px;
+        right: 0;
     }
     .menu.active .menu__active::before{
         top: 300px;
         width: 243px;
     }
-    .hamburger__icon.active{
-        position: fixed;
-        width: 300px;
-        z-index: 999999999;
+    .hamburger.active{
+        position: absolute;
+        right: 30px;
+        height: 22px;
+        z-index: 99;
         top: 30px;  
+        display: flex;
+        flex-direction: column;
     }
-    .hamburger-line{
-        background-color: #fff;
+    .hamburger__line{
+        background-color: var(--light);
         content: '';
-        width: 100px;
+        width: 30px;
         height: 2px;
         margin-right: 0;
         margin-left: auto;
+        margin: auto;
     }
 }
 @media screen and (max-width: 700px) {
